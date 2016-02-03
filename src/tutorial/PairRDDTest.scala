@@ -22,8 +22,12 @@ object PairRDDTest {
     println("performing join transformation:" + tupleList.join(other).collect().mkString("[", ",", "]"))
     println("performing rightOuterJoin transformation:" + tupleList.rightOuterJoin(other).collect().mkString("[", ",", "]"))
     println("performing leftOuterJoin transformation:" + tupleList.leftOuterJoin(other).collect().mkString("[", ",", "]"))
-        println("performing leftOuterJoin transformation:" + tupleList.leftOuterJoin(other).collect().mkString("[", ",", "]"))
-        println("performing cogroup transformation:" + tupleList.cogroup(other).collect().mkString("[", ",", "]"))
+    println("performing leftOuterJoin transformation:" + tupleList.leftOuterJoin(other).collect().mkString("[", ",", "]"))
+    println("performing cogroup transformation:" + tupleList.cogroup(other).collect().mkString("[", ",", "]"))
+
+    println("performing countByKey action:" + tupleList.countByKey())
+    println("performing collectAsMap action:" + tupleList.collectAsMap())
+    println("performing lookup action:" + tupleList.lookup(3))
 
   }
 }
