@@ -161,5 +161,6 @@
 	<classpathentry kind="lib" path="lib/xz-1.0.jar"/>
 	<classpathentry kind="lib" path="lib/zookeeper-3.4.5.jar"/>
 	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/scalatest-all_2.10-3.0.0-M10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
